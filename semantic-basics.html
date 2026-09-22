@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semanitic Basics </title>
+    <style>
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+    </style>
 </head>
 <body>
   <header>
@@ -13,17 +27,17 @@
 
   <!-- main navigation links to relative internal links only (once per page) -->
   <nav>
-    <h2>Main Navigation</h2>
+    <h2 class="sr-only">Main Navigation</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="semantic-basics.html">Semantic Basics</a></li>
-      <li><a href="semantic-advanced.html">Semantic Advanced</a></li>
+      
+      <li><a href="#hipster-elements">Hipster Elements</a></li>
+        
     </ul>  
 </nav>
  <!-- main content of the page -->
 <main>
     <!-- semanitic grouping of content -->
-    <section>
+    <section id="hipster-elements">
         <h2>Hipster Elements</h2>
         <p>This is a paragraph about hipster elements.</p>
         <p>I'm baby sriracha shakshuka yr butter board shaman muji. Occupy portland praxis bespoke. Ethical etsy cassette mumblecore enamel pin, tilde crucifix cronut black trumpet criterion angela davis edison bulb. Spritz mercury retrograde literally gastropub tarot pull twee pok pok bluesky cray bruh stussy claire denis signet monstera gluten-free. Sambas crudo margiela prism drinking vinegar.
@@ -32,9 +46,24 @@
 
         <p>Ayahuasca tumblr fit cupping deep v shabby chic kogi pour-over wayfarers cupping hammock caviar bump booktok delulu. La jetée ube buy nothing, kickstarter needle felting gut health brainrot. YOLO slow-carb cassavetes, portland praxis disrupt dembow. Fiddle leaf flexitarian celiac lomo feral, crudo thundercats metrograph tufting. Jacobin drinking vinegar plaid, the stew jawn robert walser fitzcarraldo meggings nepo baby didion bouldering. Guided by voices meh swag hairpin, banh mi jacobin man bun cloud bread hot honey wabi-sabi cronut cahiers VHS.</p>
     </section>
+    <figcaption>
+        <h2>Hipster Image</h2>
+        <figure>
+            <img src="img/hipster.jpg" alt="Hipster Image" width="400" height="300">
+            <figcaption>Hipster Image</figcaption>
+        </figure>
+    </figcaption>
+    <aside>
+        <h2>Additional Information</h2>
+        <p>This is additional information about the hipster elements.</p>
+    </aside>
+    </main>
 
-
-</main>
+    <footer>
+    <p>designed by me</p>
+    <address>email@colorado.edu</address>
+    <small>&copy; 2026</small>
+  </footer>
 
 </body>
 </html>
